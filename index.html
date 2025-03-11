@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Натальная карта</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Введите данные рождения</h1>
+    <form id="natalForm">
+        <label for="day">День:</label>
+        <input type="number" id="day" name="day" min="1" max="31" required><br><br>
+
+        <label for="month">Месяц:</label>
+        <input type="number" id="month" name="month" min="1" max="12" required><br><br>
+
+        <label for="year">Год:</label>
+        <input type="number" id="year" name="year" required><br><br>
+
+        <label for="hour">Час:</label>
+        <input type="number" id="hour" name="hour" min="0" max="23" required><br><br>
+
+        <label for="minute">Минута:</label>
+        <input type="number" id="minute" name="minute" min="0" max="59" required><br><br>
+
+        <label for="city">Город:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <button type="submit">Рассчитать</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
